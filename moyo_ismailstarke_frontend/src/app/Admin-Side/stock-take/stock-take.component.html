@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-2">
+        <div class="app-menu"></div>
+    </div>
+    <div class="col-10">
+        <div class="container mt-4">
+            <h2 class="display-6">Inventory Levels</h2>
+            <ul class="list-group">
+                <li *ngFor="let product of products" class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">{{ product.description }}</div>
+                        <div class="fw-light">Category:&nbsp;{{ product.categoryName }}</div>
+                        <div><b>Price:</b> ZAR&nbsp;{{product.price}}</div><pre></pre>
+                        <div>
+                            <b>Quantity:</b>&nbsp;
+                            <input type="number" [(ngModel)]="product.productQuantity" (change)="updateProduct(product)">
+                        </div><pre></pre>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

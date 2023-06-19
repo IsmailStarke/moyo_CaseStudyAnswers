@@ -1,0 +1,13 @@
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.gradient-form {
+    background: linear-gradient(rgba(0,110,51, 0.3), rgba(159,226,191, 0.4));
+}
+  
+.gradient-btn {
+    background: linear-gradient(to right, rgba(159,226,191, 1), rgba(156, 175, 136, 1))
+}
